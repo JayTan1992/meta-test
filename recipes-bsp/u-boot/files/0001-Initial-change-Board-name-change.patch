@@ -1,0 +1,26 @@
+From 0e091de670442e93ce7677dc62359a6040c5ed15 Mon Sep 17 00:00:00 2001
+From: JayTan1992 <twy31415926@163.com>
+Date: Fri, 18 Dec 2015 11:27:32 +0800
+Subject: [PATCH] Initial change: Board name change
+
+---
+ board/freescale/mx6sabresd/mx6sabresd.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/board/freescale/mx6sabresd/mx6sabresd.c b/board/freescale/mx6sabresd/mx6sabresd.c
+index 4bc754a..97498e7 100644
+--- a/board/freescale/mx6sabresd/mx6sabresd.c
++++ b/board/freescale/mx6sabresd/mx6sabresd.c
+@@ -1170,7 +1170,8 @@ int board_late_init(void)
+ 
+ int checkboard(void)
+ {
+-	puts("Board: MX6-SabreSD\n");
++	//puts("Board: MX6-SabreSD\n"); //modify by Jay
++	puts("Board: MX6-R200");
+ 	return 0;
+ }
+ 
+-- 
+1.9.1
+
